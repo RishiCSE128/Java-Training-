@@ -3,7 +3,7 @@ class Test{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter your name : ");
+        System.out.print("Enter your full name : ");
         String fname = sc.next();
         String lanme = sc.next(); 
 
