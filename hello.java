@@ -9,5 +9,7 @@ class Hello{
         String lname = sc.next();
 
         System.out.println("Hello "+fname+" "+lname);
+
+        //System.out.print
     }
 }
