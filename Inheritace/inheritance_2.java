@@ -1,5 +1,5 @@
 package Inheritace;
-class Base{
+abstract class Base{
     // attributes
     private int x, y;  // hieght and width of a rectacngle 
 
@@ -21,13 +21,13 @@ class Base{
         this.y=y;
     }
 
+    abstract int area();
+    abstract int perimeter();
+
     public void show(){
         System.out.println("The value of x="+this.x+" y="+this.y);
     }
-
-
 }
-
 
 class Child extends Base{
     // attribute
@@ -44,7 +44,12 @@ class Child extends Base{
         return x*y;
     }
 
-    public void show(){
+    public int perimeter(){
+        int[] temp  = super.get();
+        return 2*(temp[0]+temp[1]); 
+    }
+ 
+    public void show(){   // method overriding
         int[] temp = super.get();
         System.out.println("The values are: "+temp[0]+" "+temp[1]);
     }
